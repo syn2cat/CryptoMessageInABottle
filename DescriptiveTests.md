@@ -2,12 +2,12 @@
 
 ## FR
 ### Message crypté en haute mer
-Introduction interactive à la cryptographie. Les communications modernes nécessitent la confidentialité des messages transmis. Ce workshop utilise des moyens visuels faciles pour aborder les concepts d'encryption, de décryption et robustesse de divers algorythmes.
+Introduction interactive à la cryptographie. Les communications modernes nécessitent la confidentialité des messages transmis. Cet atelier utilise des méthodes visuelles pour illustrer les concepts de chiffrement, de déchiffrement et la robustesse des algorythmes utilisés.
 
 ## DE
 ### Verschlüsselte Flaschenpost
-Interaktive Einfürung in die Kryptographie. Die moderne Kommunikation benötigt die Möglichkeit vertrauliche Nachichten zu übermitteln. Dieser workshop nutzt visuelle Methoden um die Konzepte von Ver- und Entschlüsselung, sowie die Stärke verschiedener Algorithmen zu veranschaulichen.
+Interaktive Einführung in die Kryptographie. Die moderne Kommunikation benötigt die Möglichkeit vertrauliche Nachrichten zu übermitteln. Dieser Workshop veranschaulicht mit visuellen Methoden die Konzepte der Verschlüsselung, Entschlüsselung und Stärke der verwendeten Algorithmen.
 
 ## EN
 ### Crypto Message in a Bottle
-Interactive introduction to cryptography. The modern communications need the confidentiality of transmitted messages. This workshop uses visual methods to illustrate the concepts of encryption, decryption and the robustness of the used algorythms.
+Interactive introduction to cryptography. The modern communications need the confidentiality of transmitted messages. This workshop uses visual methods to illustrate the concepts of encryption, decryption and the robustness of the used algorithms.
