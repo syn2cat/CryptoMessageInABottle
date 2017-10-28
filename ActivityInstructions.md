@@ -114,6 +114,56 @@ In other words, the letters in the Vigenère cipher are shifted by different amo
 For example, if the key-word is ”dog,” consisting of the 4th, 15th, and 7th letters of the alphabet, then the first letter of the message is shifted by 4, the second letter is shifted by 15, the third by 7, the fourth by 4 (here we return to the beginning of the key-word), the fifth by 15, and so on. 
 Unlike the monoalphabetic ciphers, polyalphabetic ciphers are not susceptible to frequency analysis, as more than one letter in the plaintext can be represented by a single letter in the encryption.
 Ask kids to encrypt a message for the following group and put it in a bottle / jar dedicated for that age group. Remind them – no hate speech, no bullying 
+It is possible to use the cesar brutforcing drum to encrypt. Set all wheels to A. Then turn the second wheel of each pair to spell the message. Then turn all the pairs (always 1st and 2nd synchronized, stick a sticky note to fix them) so the 1st wheels spell the codeword. Now you can read the encoded message on the entry line.
+Here is hello encrypted with DOG
+
+First we encode HELLO on the second wheel pairs
+ v-- coding line
+|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
+|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|
+| |
+|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
+|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|
+| |
+|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
+|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|I|J|K|
+| |
+|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
+|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|I|J|K|
+| |
+|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
+|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|
+
+Then we turn all pairs to spell DOG on the coding line
+ v-- coding line
+|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|
+|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|I|J|
+| |
+|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|
+|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|
+| |
+|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|
+|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|
+| |
+|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|
+|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|
+| |
+|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|
+|U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|
+
+The crypted message is read on the second wheel of each pair
+KSROU
+
+To decode set all wheels to A
+AA AA AA AA AA
+then put the keyword on the 1st wheels
+DA OA GA DA OA
+put the coded message on 2nd wheels on the code line
+DK OS GR DO OU
+Then turn the 1st & 2nd wheels of each pair synchronised so that the 1st wheels are all set to A. Now you can read the message on the 2nd wheels
+AH AE AL AL AO
+
+=> HELLO
 
 /* Shall we audit those messages before the following group? Shall we ask BEE Secure for no-bullying posters and materials? */
 
