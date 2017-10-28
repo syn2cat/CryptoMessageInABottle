@@ -114,6 +114,7 @@ In other words, the letters in the Vigenère cipher are shifted by different amo
 For example, if the key-word is ”dog,” consisting of the 4th, 15th, and 7th letters of the alphabet, then the first letter of the message is shifted by 4, the second letter is shifted by 15, the third by 7, the fourth by 4 (here we return to the beginning of the key-word), the fifth by 15, and so on. 
 Unlike the monoalphabetic ciphers, polyalphabetic ciphers are not susceptible to frequency analysis, as more than one letter in the plaintext can be represented by a single letter in the encryption.
 
+## Using Caesar bruteforcing drum form encryption
 It is possible to use the cesar brutforcing drum to encrypt. Set all wheels to A. Then turn the second wheel of each pair to spell the message. Then turn all the pairs (always 1st and 2nd synchronized, stick a sticky note to fix them) so the 1st wheels spell the codeword. Now you can read the encoded message on the entry line.
 Here is hello encrypted with DOG
 
@@ -269,7 +270,7 @@ You can go on to explain the opposite use – to sign a message with your secret
 
 *No extra activities here – attendees may encrypt their messages and decrypt others' messages for as much time as they have left.*
 
-#Age Group 4 (16-18 + Adults)
+# Age Group 4 (16-18 + Adults)
 ## Caesar Cipher
 Start with a very brief explanation of Caesar cipher, key values, replacement of each letter with a numerical value and calculation of corresponding ciphertext values, using modulo operation and the remainder as the ciphertext value.
 The encryption of a letter *x* is equal to a shift of *x + n*, where *n* is the number of letters shifted. 
@@ -281,7 +282,7 @@ Also, you will need to explain that in computing, and hence in the number cipher
 
 Ask attendees to encrypt a simple phrase or sentence and swap them with a friend.
 
-##Frequency Analysis
+## Frequency Analysis
 Perhaps they can figure out a way to break the cipher of their friend on their own; otherwise, frequency analysis can be suggested to them. 
 That is, we first ask them to guess which letter appears most frequently in English (most will say either 'e' or 'a'). 
 Then we have them look at a paragraph, count the 'a's, 'e's, etc. and check their guess, as well as check the second and third most frequently occurring letters. 
