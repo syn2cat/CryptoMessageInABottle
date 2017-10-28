@@ -113,12 +113,13 @@ The Vigenère cipher, was invented by a Frenchman, Blaise de Vigenère in the 16
 In other words, the letters in the Vigenère cipher are shifted by different amounts, normally done using a word or phrase as the encryption key. 
 For example, if the key-word is ”dog,” consisting of the 4th, 15th, and 7th letters of the alphabet, then the first letter of the message is shifted by 4, the second letter is shifted by 15, the third by 7, the fourth by 4 (here we return to the beginning of the key-word), the fifth by 15, and so on. 
 Unlike the monoalphabetic ciphers, polyalphabetic ciphers are not susceptible to frequency analysis, as more than one letter in the plaintext can be represented by a single letter in the encryption.
-Ask kids to encrypt a message for the following group and put it in a bottle / jar dedicated for that age group. Remind them – no hate speech, no bullying 
+
 It is possible to use the cesar brutforcing drum to encrypt. Set all wheels to A. Then turn the second wheel of each pair to spell the message. Then turn all the pairs (always 1st and 2nd synchronized, stick a sticky note to fix them) so the 1st wheels spell the codeword. Now you can read the encoded message on the entry line.
 Here is hello encrypted with DOG
 
 First we encode HELLO on the second wheel pairs
  v-- coding line
+ 
 |A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
 |H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|
 | |
@@ -136,6 +137,7 @@ First we encode HELLO on the second wheel pairs
 
 Then we turn all pairs to spell DOG on the coding line
  v-- coding line
+ 
 |D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|
 |K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|I|J|
 | |
@@ -155,16 +157,23 @@ The crypted message is read on the second wheel of each pair
 KSROU
 
 To decode set all wheels to A
+
 AA AA AA AA AA
+
 then put the keyword on the 1st wheels
 DA OA GA DA OA
+
 put the coded message on 2nd wheels on the code line
+
 DK OS GR DO OU
+
 Then turn the 1st & 2nd wheels of each pair synchronised so that the 1st wheels are all set to A. Now you can read the message on the 2nd wheels
+
 AH AE AL AL AO
 
 => HELLO
 
+Ask kids to encrypt a message for the following group and put it in a bottle / jar dedicated for that age group. Remind them – no hate speech, no bullying 
 /* Shall we audit those messages before the following group? Shall we ask BEE Secure for no-bullying posters and materials? */
 
 Offer encrypted messages to decrypt.
@@ -191,10 +200,10 @@ Here's a code for kids to solve:
 
 LKU OHR OIT KGH WHE IER DRA ELF ROI LOE OKL OFD
 
-### Code word 
-*(flipchart/whiteboard; paper for kids to write their own tables)*
+### Code word / Keyword
+*(flipchart/whiteboard; paper for kids to write their own tables; there are printable ones)*
 
-You can make a code based on a special code word which only you know about. We've chosen the word "XYLOPHONE". 
+Kids can make a code based on a special code word (or keyword) which only they know about. We've chosen the word "XYLOPHONE". 
 So first of all we write down the normal alphabet (the plaintext alphabet), and below it we write the code alphabet, starting with the codeword, and following the codeword with the rest of the alphabet.
 But there's a trick to this - remember that we don't want repeated letters! 
 So kids have to leave out the second O in XYLOPHONE, and when you get to the normal alphabet you write down ABCDFGI... leaving out the E, the H, and any other letters in the codeword.
@@ -203,6 +212,8 @@ So here's what the alphabet looks like when you're finished:
 |Plain text:|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
 |-----------|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |Code:      |X|Y|L|O|P|H|N|E|A|B|C|D|F|G|I|J|K|M|Q|R|S|T|U|V|W|Z|
+
+The next step is to explain to kids that besides a code word/ keyword, we can have a keyletter - the code word should be written starting under the specified keyletter rather than at the beginning. And then, the rest of the alphabet is written omitting duplicate letters.
 
 ### Public Key Cryptography (Highly recommended)
 Explain the use of encryption for public-secret (private) key cryptography – with previously shown ciphers, we use the same key for encrypting and decrypting – symmetric encryption. 
