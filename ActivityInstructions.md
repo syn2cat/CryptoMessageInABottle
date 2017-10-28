@@ -114,7 +114,7 @@ In other words, the letters in the Vigenère cipher are shifted by different amo
 For example, if the key-word is ”dog,” consisting of the 4th, 15th, and 7th letters of the alphabet, then the first letter of the message is shifted by 4, the second letter is shifted by 15, the third by 7, the fourth by 4 (here we return to the beginning of the key-word), the fifth by 15, and so on. 
 Unlike the monoalphabetic ciphers, polyalphabetic ciphers are not susceptible to frequency analysis, as more than one letter in the plaintext can be represented by a single letter in the encryption.
 
-## Using Caesar bruteforcing drum form encryption
+## Using Caesar bruteforcing drum for encryption
 It is possible to use the cesar brutforcing drum to encrypt. Set all wheels to A. Then turn the second wheel of each pair to spell the message. Then turn all the pairs (always 1st and 2nd synchronized, stick a sticky note to fix them) so the 1st wheels spell the codeword. Now you can read the encoded message on the entry line.
 Here is hello encrypted with DOG
 
