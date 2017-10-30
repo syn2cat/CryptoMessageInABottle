@@ -104,6 +104,18 @@ That is, we first ask them to guess which letter appears most frequently in Engl
 Then we have them look at a paragraph, count the 'a's, 'e's, etc. and check their guess, as well as check the second and third most frequently occurring letters. 
 Also, they might look at words in ciphertext – 1-, 2- and 3-letter words in English and guess what they might be, hence guessing the letters, as the alternatives are quite few.
 
+Possible steps or tips:
+
+-Match a common letter in the message with a common letter in English or in your language (Letter Frequencies?)
+
+-Find a one letter word – what could it be?
+
+-Find a two-letter word – what could it be?
+
+-Look for double letters – what could they be?
+
+-Look at punctuation – what letter could come after an apostrophe?
+
 frequency analysis of “sciencefestival”, “neumuenster”. /*Other ideas? Ideas for French, German and Luxembourgish words, texts and most frequently used letters? I don't have much on frequency analysis*/
 
 ## Vigenere Cipher
@@ -112,6 +124,15 @@ Next, building on the Caesar cipher, we introduce Vigenère ciphers (two-alphabe
 The Vigenère cipher, was invented by a Frenchman, Blaise de Vigenère in the 16th century. It is a polyalphabetic cipher because it uses two or more cipher alphabets to encrypt the data. 
 In other words, the letters in the Vigenère cipher are shifted by different amounts, normally done using a word or phrase as the encryption key. 
 For example, if the key-word is ”dog,” consisting of the 4th, 15th, and 7th letters of the alphabet, then the first letter of the message is shifted by 4, the second letter is shifted by 15, the third by 7, the fourth by 4 (here we return to the beginning of the key-word), the fifth by 15, and so on. 
+
+How to explain encryption using a Vigenere square:
+
+Kids choose a keyword, e.g. 'dog'. They write the keyword (repeating it as many times as necessary) above the words of the message they want to encrypt – D above the first letter, O above the second letter, G above the third letter, and again D above the fourth letter, etc. Then, they start encrypting with the first letter of the keyword, e.g. D. They look at the Vigenere square and find the row starting with that chosen keyletter, e.g. D. Then, they use this row as a ciphertext alphabet to encrypt all the plaintext letters in their message, that have the chosen keyletter above them by choosing the right column. The cipher text letter is where the keyword row crosses the plaintext letter column.
+
+The same is repeated for the second, third and so on letter of the keyword. 
+
+Decryption works reversing the process.
+
 Unlike the monoalphabetic ciphers, polyalphabetic ciphers are not susceptible to frequency analysis, as more than one letter in the plaintext can be represented by a single letter in the encryption.
 
 ## Using Caesar bruteforcing drum for encryption
@@ -227,17 +248,25 @@ A lesson plan and feedback on [Teaching crypto to 5th graders] (http://avi-rubin
 # Age Group 3 (13-15)
 ## Caesar Cipher
 Start in the same way with a brief explanation of Caesar cipher, stressing more on the key/shift value and the calculation of ciphertext. 
-Discuss replacement of each letter with a numerical value (which essentially is necessary when using computers), adding the value of the key and the use of modulo operation 
-Don't use the term, explain rather that it's dividing by the number of letters in an alphabet. Then, the remainder is used as the value of the ciphertext letter:
+Discuss replacement of each letter with a numerical value (which essentially is necessary when using computers), adding the value of the key and the use of modulo operation. 
+Don't use the term, explain rather that it's dividing by the number of letters in an alphabet. Then, the remainder is used as the value of the ciphertext letter.
 
-The encryption of a letter *x* is equal to a shift of *x + n*, where *n* is the number of letters shifted. 
-The result of the process is taken under modulo division, essentially meaning that if a letter is shifted past the end of the alphabet, it wraps around to the beginning. 
-Decryption of the encrypted text (*ciphertext*) would be defined similarly, with instead a subtraction of the shift amount.
+Ask attendees to encrypt a simple phrase or sentence with a key of their choice. They can encrypt the same phrase or sentence later with additive, multiplicative or affine ciphers.
+
+##Additive, Multiplicative and Affine ciphers
+First, youngsters need to replace each letter with its numerical value, starting with A=0, B=1, C=2, etc. Then, an encryption key value is added to each letter's value and the result is divided by 26. The remainder of this division is actually the ciphernumber. This is called Additive cipher.
+
+To decrypt this, from each number in the ciphertext, kids need to subtract the key value and then find the letter corresponding to the result value.
+
+A similar cipher, Multiplicative, exists when we multiply the letter numerical value by a key rather than add it to it. 
+To decrypt this, kids need to understand the modular inverse of an integer concept so it might be too much for them.
+
+When we combine the Additive Cipher and the Multiplicative Cipher, we get Affine cipher.
 
 While it will be too much to show youngsters formulas, stressing the importance of the remainder from a division will suffice. 
-However, we need to explain that in computing, and hence in the number cipher (called Affine cipher), counting starts from 0 to m-1 or 26-1, which is 25. For example letter A will be 0 and the last letter, Z, will be 25.
+However, we need to explain that in computing, and hence in the number cipher, counting starts from 0 to m-1 or 26-1, which is 25. For example letter A will be 0 and the last letter, Z, will be 25.
 
-Ask attendees to encrypt a simple phrase or sentence with a key of their choice and exchange with friends.
+Ask attendees to encrypt a simple phrase or sentence with a cipher and key of their choice and exchange with friends.
 
 ## Frequency Analysis
 As unreadable as the resulting ciphertext may appear at first sight, the Caesar Cipher is one of the weakest forms of encryption.
@@ -250,11 +279,31 @@ That is, we first ask them to guess which letter appears most frequently in Engl
 Then we have them look at a paragraph, count the 'a's, 'e's, etc. and check their guess, as well as check the second and third most frequently occurring letters. 
 Also, they might look at words in ciphertext – 1-, 2- and 3-letter words in English and guess what they might be, hence guessing the letters, as the alternatives are quite few.
 
+Possible steps or tips:
+
+-Match a common letter in the message with a common letter in English or in your language (Letter Frequencies?)
+
+-Find a one letter word – what could it be?
+
+-Find a two-letter word – what could it be?
+
+-Look for double letters – what could they be?
+
+-Look at punctuation – what letter could come after an apostrophe?
+
 frequency analysis of “sciencefestival”, “neumuenster”. /*Other ideas? Ideas for French, German and Luxembourgish words, texts and most frequently used letters? I don't have much on frequency analysis*/
 
 ## Vigenère cipher
 And then, you can move on to Vigenère cipher, which is a good way to lead into talking about Enigma-style ciphers that use multiple alphabets, making decryption more difficult, and how that led to more complex systems. 
 As we will put up a Vigenere square, youngsters can encode (as a group) a short message and see how very different it looks from the previous ciphers. 
+
+How to explain encryption using a Vigenere square:
+
+Kids choose a keyword, e.g. 'dog'. They write the keyword (repeating it as many times as necessary) above the words of the message they want to encrypt – D above the first letter, O above the second letter, G above the third letter, and again D above the fourth letter, etc. Then, they start encrypting with the first letter of the keyword, e.g. D. They look at the Vigenere square and find the row starting with that chosen keyletter, e.g. D. Then, they use this row as a ciphertext alphabet to encrypt all the plaintext letters in their message, that have the chosen keyletter above them by choosing the right column. The cipher text letter is where the keyword row crosses the plaintext letter column.
+
+The same is repeated for the second, third and so on letter of the keyword. 
+
+Decryption works reversing the process.
 
 /*I miss here the transition to asymmetric encryption and Public key cryptography*/
 
@@ -293,6 +342,13 @@ frequency analysis of “sciencefestival”, “neumuenster”. /*Other ideas? I
 ## Vigenère cipher
 And then, you can move on to Vigenère cipher, which is a good way to lead into talking about Enigma-style ciphers that use multiple alphabets, making decryption more difficult, and how that led to more complex systems. 
 As we will put up a Vigenere square, youngsters can encode (as a group) a short message and see how very different it looks from the previous ciphers. 
+
+How to explain encryption using a Vigenere square:
+
+Kids choose a keyword, e.g. 'dog'. They write the keyword (repeating it as many times as necessary) above the words of the message they want to encrypt – D above the first letter, O above the second letter, G above the third letter, and again D above the fourth letter, etc. Then, they start encrypting with the first letter of the keyword, e.g. D. They look at the Vigenere square and find the row starting with that chosen keyletter, e.g. D. Then, they use this row as a ciphertext alphabet to encrypt all the plaintext letters in their message, that have the chosen keyletter above them by choosing the right column. The cipher text letter is where the keyword row crosses the plaintext letter column.
+
+The same is repeated for the second, third and so on letter of the keyword. 
+
 
 ## Public Key Cryptography
 Explain that previously shown ciphers use the same key for encrypting and decrypting – symmetric encryption. It is more secure if each of us has different keys. 
