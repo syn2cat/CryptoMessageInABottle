@@ -39,7 +39,7 @@ There is a 1 in over 115 quattuorvigintillion (that’s a 78-digit number) chanc
 
 - Printouts with cryptography self-study resources (the links at the end of the instructions document);
 
-- printouts of decryption tasks;
+- printouts of decryption [tasks] (https://www.math.ksu.edu/quest/CryptoWorkbook.pdf)
 
 - printouts of frequency analysis texts for different groups: EN/FR/DE/LU (and ages 11-13/14+ if needed);
 
