@@ -8,7 +8,7 @@
 
 - Braille poster with [Braille alphabet](Visuals/Braille.png) and [a challenge to solve](Visuals/Braille challenge.png) 
  
-- Vigenere square poster: [good-looking example](Visuals/Vigenere-cipher-cool-background.jpg) just as an idea what the poster should look like and a [usable file](Visuals/Vigenère_square_shading.svg) in terms of size and usage rights
+- Vigenere square poster: [good-looking example](Visuals/Vigenere-cipher-cool-background.jpg) just as an idea what the poster should look like and a [usable file](Visuals/Vigenère_square_shading.png) in terms of size and usage rights
 
 - A poster with an example of [Vigenere cipher with a keyword, e.g. code](Visuals/Vigenere-example-keywordcode.png)
 
