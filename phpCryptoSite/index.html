@@ -19,7 +19,7 @@
       <div class="page-header" id="banner">
         <div class="row">
           <div class="col-lg-6 col-lg-offset-6" id="mainDiv">
-            <h1>Welcome to level2 decrypt challenge</h1>
+            <h1>Welcome to syn2cat decrypt challenge</h1>
             <form class="bs-component">
               <div class="form-group">
                 <label class="control-label" for="enc">Encrypted message</label>
@@ -35,6 +35,7 @@
                 </div>
               </div>
             </form>
+	    This page made by <a href=https://syn2cat.lu/>Syn2Cat</a>, the a.s.b.l. running the <a href=https://level2.lu/>Level2</a> hackerspace.
           </div>
         </div>
       </div>
@@ -74,11 +75,11 @@
     {
       result = caesarShift(enc,i);
       if (result === dec){
-        $("#mainDiv").empty().append("<h1 class='text-success'>You made it</h1><h3><a href='./index.html'>click here to<br>Try another code</a></h3>");
+        $("#mainDiv").empty().append("<h1 class='text-success'>Congratulations, you made it!</h1><h3><a href='./index.html'>click here to<br>Try another code</a></h3>");
         succeed = true;
     }
     if (!succeed)
-      $("#mainDiv").empty().append("<h1 class='text-danger'>You didn't made it</h1><h3><a href='./index.html'>click here to<br>Try again</a></h3>");
+      $("#mainDiv").empty().append("<h1 class='text-danger'>Sorry, you didn't succeed</h1><h3><a href='./index.html'>click here to<br>Try again</a></h3>");
   }
   });
 });
