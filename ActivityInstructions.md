@@ -140,8 +140,8 @@ It is possible to use the cesar brutforcing drum to encrypt. Set all wheels to A
 Here is hello encrypted with DOG
 
 First we encode HELLO on the second wheel pairs
+~~~~
  v-- coding line
- 
 |A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
 |H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|
 | |
@@ -156,10 +156,10 @@ First we encode HELLO on the second wheel pairs
 | |
 |A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
 |O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|
-
+~~~~
 Then we turn all pairs to spell DOG on the coding line
+~~~~
  v-- coding line
- 
 |D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|
 |K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|I|J|
 | |
@@ -174,25 +174,27 @@ Then we turn all pairs to spell DOG on the coding line
 | |
 |G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|A|B|C|D|E|F|
 |U|V|W|X|Y|Z|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|
-
+~~~~
 The crypted message is read on the second wheel of each pair
+
 KSROU
 
 To decode set all wheels to A
-
+~~~~
 AA AA AA AA AA
-
+~~~~
 then put the keyword on the 1st wheels
+~~~~
 DA OA GA DA OA
-
+~~~~
 put the coded message on 2nd wheels on the code line
-
+~~~~
 DK OS GR DO OU
-
+~~~~
 Then turn the 1st & 2nd wheels of each pair synchronised so that the 1st wheels are all set to A. Now you can read the message on the 2nd wheels
-
+~~~~
 AH AE AL AL AO
-
+~~~~
 => HELLO
 
 Ask kids to encrypt a message for the following group and put it in a bottle / jar dedicated for that age group. Remind them – no hate speech, no bullying 
@@ -230,11 +232,11 @@ So first of all we write down the normal alphabet (the plaintext alphabet), and 
 But there's a trick to this - remember that we don't want repeated letters! 
 So kids have to leave out the second O in XYLOPHONE, and when you get to the normal alphabet you write down ABCDFGI... leaving out the E, the H, and any other letters in the codeword.
 So here's what the alphabet looks like when you're finished:
-
+~~~~
 |Plain text:|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|
 |-----------|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |Code:      |X|Y|L|O|P|H|N|E|A|B|C|D|F|G|I|J|K|M|Q|R|S|T|U|V|W|Z|
-
+~~~~
 The next step is to explain to kids that besides a code word/ keyword, we can have a keyletter - the code word should be written starting under the specified keyletter rather than at the beginning. And then, the rest of the alphabet is written omitting duplicate letters.
 
 ### Public Key Cryptography (Highly recommended)
@@ -305,7 +307,7 @@ The same is repeated for the second, third and so on letter of the keyword.
 
 Decryption works reversing the process.
 
-/*I miss here the transition to asymmetric encryption and Public key cryptography*/
+Transition to assymetric key systems: how do we trasmit the encryption key so that nobody can intercept it on the way?
 
 ## Public Key Cryptography 
 Explain the use of encryption in public-secret (private) key cryptography – with previously shown ciphers, we use the same key for encrypting and decrypting – symmetric encryption. It is more secure if sender and recipient of the encrypted message have different keys. 
@@ -316,6 +318,8 @@ Bob and Alice case: Alice wants to send a message that only Bob can read. She ta
 This is how encryption works with different keys for encryption and decryption – essentially modern encryption mechanisms.
 
 You can go on to explain the opposite use – to sign a message with your secret (private) key when everybody having the public key can open it. But they know that only you could lock it in the box, as only the secret key could open it in that direction.
+
+See the detailed operating of this workshop in [PublicSecretCrypto/README.md](PublicSecretCrypto/README.md)
 
 *No extra activities here – attendees may encrypt their messages and decrypt others' messages for as much time as they have left.*
 
@@ -363,6 +367,8 @@ Go on to explain the opposite use – to sign a message with your secret (privat
 Mention asymmetric key algorithms uses: SSL (point out https), SSH, PGP and GPG, bitcoins depending on the level of understanding and interest.
 
 Maybe talk about hash functions, MD-5, SHA-1 and SHA-256
+
+See the detailed operating of this workshop in [PublicSecretCrypto/README.md](PublicSecretCrypto/README.md)
 
 *No extra activities here – attendees may encrypt their messages and decrypt others' messages for as much time as they have left.*
 
