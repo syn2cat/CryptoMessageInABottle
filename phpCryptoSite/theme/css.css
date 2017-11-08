@@ -9,21 +9,28 @@ body {
 	color:#fff;
   	background-color:#333;
   	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+		height: 100%;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+/* Wrapper for page content to push down footer */
+.wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
 }
 
-a:link, a:visited {
-	color:#eee;
-}
-
-.block {
-	background-color:rgba(0,0,0,0.2);
-    height:370px;
-  	padding-left:12px;
-  	padding-right:12px;
-}
-
-.block-sm {
-    height:180px;
+/* Set the fixed height of the footer here */
+.footer {
+  height: 60px;
+  background-color: #00000000;
+	position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .btn-flat {
