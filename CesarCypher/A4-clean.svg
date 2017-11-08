@@ -61,6 +61,30 @@
          ry="140.08296"
          transform="scale(1,-1)" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath230">
+      <ellipse
+         style="opacity:1;fill:#55ddff;fill-opacity:1;stroke:none;stroke-width:0.01163984"
+         id="ellipse232"
+         cx="0.49999985"
+         cy="-0.4999997"
+         rx="0.5"
+         ry="0.49999997"
+         transform="scale(1,-1)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath234">
+      <ellipse
+         style="opacity:1;fill:#55ddff;fill-opacity:1;stroke:none;stroke-width:0.01163984"
+         id="ellipse236"
+         cx="0.49999985"
+         cy="-0.49999884"
+         rx="0.5"
+         ry="0.49999997"
+         transform="scale(1,-1)" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -69,9 +93,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="532.7228"
-     inkscape:cy="283.47806"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="302.49076"
+     inkscape:cy="241.24536"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -676,7 +700,8 @@
        d="m 153.357,210.06425 0.68846,-0.6823 h 0.34325 l -0.61431,0.59738 0.64881,1.00977 h -0.34333 l -0.50209,-0.81796 -0.22079,0.21471 v 0.60325 h -0.25818 v -2.20493 h 0.25818 z" />
     <g
        id="g760"
-       transform="matrix(22.709848,0,0,-22.751828,111.23687,260.98591)">
+       transform="matrix(22.709848,0,0,-22.751828,111.23687,260.98591)"
+       clip-path="url(#clipPath234)">
       <image
          width="1"
          height="1"
@@ -1145,7 +1170,8 @@
        inkscape:connector-curvature="0" />
     <g
        transform="matrix(22.709848,0,0,-22.751828,111.23687,260.98593)"
-       id="g4376">
+       id="g4376"
+       clip-path="url(#clipPath230)">
       <image
          id="image4374"
          mask="url(#mask762)"
