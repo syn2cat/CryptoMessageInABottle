@@ -1,3 +1,23 @@
+# Running the expo booth
+For the different exercises, see below descriptions for different age ranges.
+## Setup
+Idea is to have 5 stations, mapping somewhat the history and complexitiy of cryptography
+
+1) Scytale
+  A standing neon tube with a paper wrapped around half of the paper not wrapped showing gibberish. On the table several rods/tubes with different diameters. This is the teaser to get people interested. Show an encrypted image by rolling it onto a tube. Give people strips of paper to roll themselves around and then wrrite a message.
+
+2) Pigpen/Masonic
+  Worksheets on the table, poster on the wall. Explain how letters become symbols and how to reverse. Make them decode the word. Make them create a secret message to be decoded by the next person. Give them the previous person's message to decode.
+
+3) Ceasar
+  Tell about Julius Caeser, roman emperor (for Kids, mention Asterix) how he coordinates the troups. Explain the encryption and that decryption goes in the other direction. Make them decode the word. Stop them decoding second word, the code/key is not known. Introduction to the concept of key. SHow how to find the key (break the code) with the cryptodrum.
+
+4) Vigenere
+  The key becomes now a word. Make visitors write a small sentence and chose a keyword (password). Then encrypt with 2 rules to help find the letters on the matrix. If there are 2 people, make them exchange the messages. Then decrypt.
+
+5) Asymmetric keys
+  Explain that sharing a password overseas is impractical. Introduce to one way function and the one way lock. Make people lock/unlock the cylinders when demonstrating.
+
 # Age Group 1 (7-9 years old)
 ## Substitution Ciphers Simplified
 *(white board/ flipchart, stick-it notes, cipher ruler prototype, cipher wheel, cardboard / paper plates, scissors, rulers and protractors, pins)*
