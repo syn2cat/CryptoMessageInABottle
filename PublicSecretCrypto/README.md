@@ -3,6 +3,8 @@
 Inspired from https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/
 create a lock with 2 keys of which one can only unlock and the other can only lock
 
+Short demo video:  https://www.youtube.com/watch?v=iW8DV2UvkAg
+
 There are 2 lock cylinders, as can be found on normal doors, located in a padlock style device. It allows to close a box, envelope or be attached to items.
 The first trials with a prototype were a success. People are amazed.
 
